@@ -64,7 +64,9 @@ body {
     </script>
     <script>
       window.onload = function() {
-        document.getElementById("my_audio").play();
+        document.body.addEventListener("mousemove", function () {
+          document.getElementById("my_audio").play();
+        })
       }
     </script>
   </body>
