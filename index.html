@@ -1,73 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <style>
-    body {background-color: black;}
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The website for FRC team 9206 GRP Robotics." />
+        <title>Home &ndash; GRP Robotics</title>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+                <a class="pure-menu-heading" href="">9206</a>
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+                    <li class="pure-menu-item"><a href="/program" class="pure-menu-link">Our Program</a></li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                        <a href="/seasons" class="pure-menu-link">Previous Seasons</a>
+                        <ul class="home-menu pure-menu-children">
+                            <li class="pure-menu-item">
+                                <a href="/seasons/#2024" class="pure-menu-link">2024 Crescendo</a>
+                            </li>
+                            <li class="pure-menu-item">
+                                <a href="/seasons/#2024" class="pure-menu-link">2023 Charged-Up</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="pure-menu-item"><a href="/sponsors" class="pure-menu-link">Our Sponsors</a></li>
+                    <li class="pure-menu-item"><a href="/donate" class="pure-menu-link">Donate</a></li>
+                </ul>
+            </div>
+        </div>
 
+        <div class="splash-container">
+            <div class="splash">
+                <h1 class="splash-head">
+                    We&nbsp;
+                    <div id="typed-strings">
+                        <p>Create</p>
+                        <p>Innovate</p>
+                        <p>Inspire</p>
+                        <p>Build</p>
+                        <p>Design</p>
+                        <p>Program</p>
+                        <p>Compete</p>
+                        <p>Learn</p>
+                        <p>Grow</p>
+                        <p>Are 9206</p>
+                    </div>
+                    <span class="splash-text" id="typed"></span>
+                    .
+                    <script>
+                        var typed = new Typed("#typed", {
+                            stringsElement: "#typed-strings",
+                            typeSpeed: 50,
+                            backSpeed: 50,
+                            loop: true,
+                            backDelay: 700,
+                            showCursor: false,
+                        });
+                    </script>
+                </h1>
+                <p class="splash-subhead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
 
-/* style.css */
+        <div class="content-wrapper">
+            <div class="content">
+                <h2 class="content-head is-center" data-aos="fade-down">About Us</h2>
 
-html, body {
-  height: 100%;
-}
+                <div class="pure-g">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 is-center" data-aos="fade-down">
+                        <h3 class="content-subhead">
+                            <i class="fa-solid fa-school"></i>
+                            12
+                        </h3>
+                        <p>Students</p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 is-center" data-aos="fade-down">
+                        <h3 class="content-subhead">
+                            <i class="fa-solid fa-chalkboard-user"></i>
+                            2
+                        </h3>
+                        <p>Mentors</p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 is-center" data-aos="fade-down">
+                        <h3 class="content-subhead">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            8
+                        </h3>
+                        <p>Alumni</p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4 is-center" data-aos="fade-down">
+                        <h3 class="content-subhead">
+                            <i class="fa-solid fa-rocket"></i>
+                            3
+                        </h3>
+                        <p>Seasons</p>
+                    </div>
+                </div>
+            </div>
 
-body {
-  margin: 0;
-  display: flex;
+            <img class="pure-img-responsive" src="/assets/home/robot1.jpg" alt="Robot" />
 
-  /* This centers our sketch horizontally. */
-  justify-content: center;
+            <div class="ribbon l-box-lrg pure-g">
+                <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
+                    <img width="300" alt="File Icons" class="pure-img-responsive" src="/img/common/file-icons.png" />
+                </div>
+                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
+                    <h2 class="content-head content-head-ribbon">Who we are.</h2>
 
-  /* This centers our sketch vertically. */
-  align-items: center;
-}</style>
-  </head>
-    <title>Hello world!</title>
+                    <p>
+                        FRC team 9206 GRP Robotics is a FIRST Robotics Competition (FRC) Team out of Grand Rapids, MI. The team was established in June 2023 at Grand River Preparatory Highschool, whose mission is to promote FIRST and STEM
+                        education opportunities in Grand Rapids, MI. We are a highschool-based team and open to students who attend our school.
+                    </p>
+                </div>
+            </div>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+            <div class="content">
+                <h2 class="content-head is-center" data-aos="fade-down">2025 Sponsors.</h2>
+                <div class="pure-g">
+                    <div class="pure-u-1-2 is-center" data-aos="fade-right">
+                        <img class="pure-img-responsive" src="/assets/home/GHF.png" alt="GHF" />
+                    </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-  <body>
+                    <div class="pure-u-1-2 is-center" data-aos="fade-left">
+                        <img class="pure-img-responsive" src="/assets/home/DLN.png" alt="GHF" />
+                    </div>
+                </div>
+            </div>
 
-    <audio id="my_audio" src="/test.mp3" loop="loop"></audio>
-        
-     <script>
-    function setup() {
-  createCanvas(400, 400);
-}
+            <div class="footer l-box is-center">
+                <h2 class="content-head content-head-ribbon">Info@example.com</h2>
+                <p>Copyright 2025 Nothing</p>
+            </div>
+        </div>
 
-
-
-                            var R1=1,R2=2,K1=250,
-                        K2=5,A=1,B=1;draw=function(){
-                    background(00);A+=0.03;B+=0.01;var cA 
-                 =Math.cos(A),sA=Math.sin(A),cB=Math.cos(B),
-                sB = Math.sin(B);for(var j=0;j<6.28;j+=0.3){
-                var ct=Math.cos(j),st=Math.sin(j);for(var i=0;
-               i<6.28;i+=0.1){var sp=Math.sin(i),cp=Math.cos(i),
-               ox=R2+R1*ct,oy=R1*st,          /*very cool donut
-               */x=ox*(cB*cp+sA*sB*           sp)-oy*cA*sB,y///
-               =ox*(sB*cp-sA*cB*sp)           +oy*cA*cB,ooz/**/
-               =1/(K2+cA*ox*sp+sA*            oy),/*based on*/
-               xp=(200+K1*ooz*x),yp           =(200-K1*ooz*y),
-               L/*www.a1k0n.net/2011/07/20/donut-math.html :P*/
-               =0.5+1*(cp*ct*sB-cA*ct*sp-sA*st+cB*(cA*st-ct*sA*
-               sp));noStroke();fill(125,249,255,50);ellipse///
-                  (xp,yp,10,10);}}};/*===================*/
-                   //==================================//
-                     //=============================//
-                          //====================//
-    </script>
-    <script>
-      window.onload = function() {
-        document.body.addEventListener("mousemove", function () {
-          document.getElementById("my_audio").play();
-        })
-      }
-    </script>
-  </body>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
