@@ -8,6 +8,12 @@
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
  */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     line-height: 1.7em;
     color: #7f8c8d;
@@ -130,7 +136,7 @@ a.pure-button-primary {
 
 .splash-container {
     background: rgba(0, 0, 0, 0.5);
-    background-image: url("/assets/home/banner.jpg");
+    background-image: url("/assets/home/banner.png");
     background-size: cover;
     background-blend-mode: multiply;
     z-index: 1;
